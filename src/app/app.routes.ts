@@ -3,6 +3,5 @@ import { Header } from './shared/components/header/header';
 
 export const routes: Routes = [
 
-    
 
 ];
