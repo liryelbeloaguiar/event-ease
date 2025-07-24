@@ -1,0 +1,53 @@
+/* Custom subtitle styling */
+.step-subtitle {
+  display: block;
+  font-size: 0.75em;
+  color: #757575;
+  margin-top: 2px;
+}
+
+/* Center the text content within the label */
+.step-label-content {
+  text-align: center;
+}
+
+/* --- Styles to move the icon above the label --- */
+
+/* Target the header and make it a vertical flex container */
+::ng-deep .mat-horizontal-stepper-header {
+  height: auto !important; /* Allow height to adjust based on content */
+  padding: 12px 12px !important; /* Adjust padding as needed */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Ensure the icon container is also a block element or flex item */
+::ng-deep .mat-step-icon,
+::ng-deep .mat-step-icon-not-touched {
+  margin-right: 0 !important; /* Remove default right margin */
+  margin-bottom: 8px; /* Add space below the icon */
+}
+
+/* Adjust the label element itself */
+::ng-deep .mat-step-label {
+  display: flex; /* Make the label itself a flex container */
+  flex-direction: column; /* Stack its content (title and subtitle) vertically */
+  align-items: center; /* Center its content horizontally */
+  text-align: center; /* Ensure text inside is centered */
+}
+
+/* Adjust the text label within the stepper header for centering */
+::ng-deep .mat-step-text-label {
+  text-align: center;
+}
+
+/* Optional: Adjust width of the label to ensure centering is visible across the stepper */
+::ng-deep .mat-horizontal-stepper-header-container {
+  justify-content: space-around;
+}
+
+::ng-deep .mat-horizontal-stepper-header {
+  flex-basis: 0;
+  flex-grow: 1;
+}

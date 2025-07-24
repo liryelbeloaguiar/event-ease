@@ -1,0 +1,42 @@
+<mat-stepper orientation="horizontal">
+
+  <ng-template matStepperIcon="number">
+    <mat-icon>radio_button_unchecked</mat-icon>
+  </ng-template>
+
+  <ng-template matStepperIcon="edit">
+    <mat-icon>create</mat-icon>
+  </ng-template>
+
+  <ng-template matStepperIcon="done">
+    <mat-icon>check_circle</mat-icon>
+  </ng-template>
+
+  <mat-step>
+    <ng-template matStepLabel>
+      <div class="flex flex-col items-center text-center">
+        Identificação
+        <span class="block text-gray-600 text-xs mt-0.5">Seus dados pessoais</span>
+      </div>
+    </ng-template>
+    <ng-template matStepContent>
+      <p>This content was rendered lazily</p>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>
+      <div class="flex flex-col items-center text-center">
+        Horários disponíveis
+        <span class="block text-gray-600 text-xs mt-0.5">Escolha o melhor horário para você</span>
+      </div>
+    </ng-template>
+    <ng-template matStepContent>
+      <p>This content was also rendered lazily</p>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+
+</mat-stepper>
